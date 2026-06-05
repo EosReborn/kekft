@@ -219,6 +219,23 @@
       .strip-grid { grid-template-columns: 1fr; }
       .hero-stats { grid-template-columns: 1fr; }
     }
+  
+    @media (max-width: 1024px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-img-wrap { display: none; }
+      .strip-grid { grid-template-columns: repeat(2, 1fr); }
+      .why-grid { grid-template-columns: 1fr; }
+      .prog-grid { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .strip-grid { grid-template-columns: 1fr; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .hero-btns { flex-direction: column; }
+      .hero-btns .btn { width: 100%; justify-content: center; }
+      .stat-box { padding: 16px; }
+    }
+
   </style>
 </head>
 <body>
@@ -542,5 +559,18 @@
 </footer>
 
 <script src="main.js"></script>
+
+<!-- ─── COOKIE BANNER ─── -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie tájékoztató">
+  <div class="cookie-text">
+    <p><strong>🍪 Cookie tájékoztató</strong><br>
+    Weboldalunk sütiket (cookie-kat) használ a jobb felhasználói élmény biztosításához és látogatottsági statisztikák gyűjtéséhez. A sütik elfogadásával hozzájárul ezek használatához. Bővebb információt <a href="https://www.knauz-energie.hu/adatkezelesi-tajekoztato/" target="_blank">Adatkezelési tájékoztatónkban</a> talál.</p>
+  </div>
+  <div class="cookie-btns">
+    <button class="cookie-accept" id="cookieAccept">Elfogadom</button>
+    <button class="cookie-decline" id="cookieDecline">Csak szükséges</button>
+  </div>
+  <button class="cookie-close" id="cookieClose" aria-label="Bezár">✕</button>
+</div>
 </body>
 </html>

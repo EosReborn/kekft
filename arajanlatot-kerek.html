@@ -26,6 +26,13 @@
     .wc-item { display: flex; gap: 8px; font-size: 14px; color: var(--gray-600); margin-bottom: 8px; align-items: center; }
     .wc-item::before { content: '✓'; color: var(--green); font-weight: 700; }
     @media(max-width:900px){ .contact-layout{grid-template-columns:1fr;} }
+  
+    @media (max-width: 900px) { .contact-layout { grid-template-columns: 1fr; } }
+    @media (max-width: 600px) {
+      div[style*="grid-template-columns: 1fr 1fr"] { display: block !important; }
+      div[style*="grid-template-columns: 1fr 1fr"] > div { margin-bottom: 16px; }
+    }
+
   </style>
 </head>
 <body>
@@ -146,4 +153,17 @@
   <div class="footer-bottom"><p>© 2024 Knauz Energie Kft.</p><a href="https://www.knauz-energie.hu/adatkezelesi-tajekoztato/">Adatkezelési tájékoztató</a></div>
 </div></footer>
 <script src="main.js"></script>
+
+<!-- ─── COOKIE BANNER ─── -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie tájékoztató">
+  <div class="cookie-text">
+    <p><strong>🍪 Cookie tájékoztató</strong><br>
+    Weboldalunk sütiket (cookie-kat) használ a jobb felhasználói élmény biztosításához és látogatottsági statisztikák gyűjtéséhez. A sütik elfogadásával hozzájárul ezek használatához. Bővebb információt <a href="https://www.knauz-energie.hu/adatkezelesi-tajekoztato/" target="_blank">Adatkezelési tájékoztatónkban</a> talál.</p>
+  </div>
+  <div class="cookie-btns">
+    <button class="cookie-accept" id="cookieAccept">Elfogadom</button>
+    <button class="cookie-decline" id="cookieDecline">Csak szükséges</button>
+  </div>
+  <button class="cookie-close" id="cookieClose" aria-label="Bezár">✕</button>
+</div>
 </body></html>
