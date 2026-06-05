@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Árajánlat kérése – Knauz Energie Kft</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .contact-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 56px; align-items: start; }
+    .contact-aside h2 { font-size: clamp(24px,3vw,36px); color: var(--navy); margin-bottom: 14px; }
+    .contact-aside p { color: var(--gray-400); line-height: 1.8; margin-bottom: 32px; }
+    .contact-info-list { display: flex; flex-direction: column; gap: 16px; margin-bottom: 36px; }
+    .ci-item { display: flex; gap: 14px; align-items: flex-start; }
+    .ci-icon { width: 42px; height: 42px; border-radius: var(--r-sm); background: var(--sky); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .ci-icon svg { width: 18px; height: 18px; fill: var(--blue); }
+    .ci-item strong { display: block; font-size: 13px; color: var(--navy); font-weight: 600; }
+    .ci-item a, .ci-item span { font-size: 14px; color: var(--gray-400); text-decoration: none; display: block; margin-top: 2px; transition: color 0.2s; }
+    .ci-item a:hover { color: var(--blue); }
+    .crm-box { background: var(--white); border-radius: var(--r-xl); box-shadow: var(--shadow-lg); overflow: hidden; border: 1px solid var(--gray-200); }
+    .crm-box-header { background: linear-gradient(135deg, var(--navy), var(--blue)); padding: 28px 32px; }
+    .crm-box-header h3 { color: white; font-size: 20px; }
+    .crm-box-header p { color: rgba(255,255,255,0.6); font-size: 14px; margin-top: 4px; }
+    .crm-box iframe { display: block; width: 100%; border: none; min-height: 950px; }
+    .why-choose { background: var(--sky); border-radius: var(--r-lg); padding: 24px; margin-top: 28px; }
+    .why-choose h4 { color: var(--navy); margin-bottom: 14px; font-size: 15px; }
+    .wc-item { display: flex; gap: 8px; font-size: 14px; color: var(--gray-600); margin-bottom: 8px; align-items: center; }
+    .wc-item::before { content: '✓'; color: var(--green); font-weight: 700; }
+    @media(max-width:900px){ .contact-layout{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Knauz Energie Kft"></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Főoldal</a></li><li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+    <li><a href="programok.html">Programok</a></li><li><a href="referencia.html">Referenciák</a></li>
+    <li><a href="rolunk.html">Rólunk</a></li><li><a href="arajanlatot-kerek.html" class="nav-cta active">Árajánlat</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Főoldal</a><a href="szolgaltatasok.html">Szolgáltatások</a>
+  <a href="programok.html">Programok</a><a href="referencia.html">Referenciák</a>
+  <a href="rolunk.html">Rólunk</a><a href="arajanlatot-kerek.html" class="mob-cta active">Árajánlatot kérek →</a>
+</div>
+
+<div class="page-hero" style="background:linear-gradient(135deg,var(--green-deep),var(--green));">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Főoldal</a><span>/</span>Árajánlat kérése</div>
+    <span class="label-tag" style="margin-top:16px;background:rgba(255,255,255,0.12);color:rgba(255,255,255,0.75);">Ingyenes</span>
+    <h1>Kérjen ingyenes<br>árajánlatot!</h1>
+    <p>Töltse ki az alábbi űrlapot, és kollégánk 24 órán belül felveszi Önnel a kapcsolatot. Az árajánlat teljesen ingyenes és kötelezettségmentes.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <div class="contact-aside reveal-left">
+        <span class="label-tag">Elérhetőségeink</span>
+        <h2 style="margin-top:14px;">Állunk rendelkezésére!</h2>
+        <p>Bármilyen kérdése van, keresse munkatársainkat telefonon, e-mailben, vagy töltse ki az árajánlat-kérő űrlapot.</p>
+
+        <div class="contact-info-list">
+          <div class="ci-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:info@knauz-energie.hu">info@knauz-energie.eu</a>
+              <a href="mailto:ajanlat@knauz-energie.hu">ajanlat@knauz-energie.eu</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg></div>
+            <div>
+              <strong>Telefon — Értékesítés</strong>
+              <a href="tel:+36307223991">+36 30 722 3991 — Balogh Zoltán</a>
+              <a href="tel:+36204771144">+36 20 477 1144 — Tóth András</a>
+              <a href="tel:+36204043023">+36 20 404 3023 — Iroda</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <div>
+              <strong>Cím</strong>
+              <span>Győr és környéke, Magyarország</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="why-choose">
+          <h4>Miért kérjen tőlünk árajánlatot?</h4>
+          <div class="wc-item">Ingyenes és kötelezettségmentes</div>
+          <div class="wc-item">24 órán belüli visszajelzés</div>
+          <div class="wc-item">Személyre szabott megoldások</div>
+          <div class="wc-item">E-on regisztrált szakemberek</div>
+          <div class="wc-item">Pályázati lehetőségek feltérképezése</div>
+        </div>
+      </div>
+
+      <div class="crm-box reveal-right">
+        <div class="crm-box-header">
+          <h3>Árajánlat kérése</h3>
+          <p>Kérjük, töltse ki az alábbi mezőket. Minden mező kitöltése segít pontosabb ajánlatot adni.</p>
+        </div>
+        <iframe src="forms/arajanlatform.html" id="miniCRMFrame" scrolling="no" title="Árajánlat kérése"></iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- GYIK -->
+<section class="section" style="background:var(--cream);padding:72px 0;">
+  <div class="container">
+    <div class="section-header reveal"><span class="label-tag">GYIK</span><h2>Gyakran ismételt kérdések</h2></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;" class="reveal">
+      <div style="background:white;border-radius:var(--r-lg);padding:28px;border:1px solid var(--gray-200);">
+        <h4 style="color:var(--navy);margin-bottom:10px;">Mennyi ideig tart a telepítés?</h4>
+        <p style="font-size:14px;color:var(--gray-400);">Egy átlagos lakóházon 1-3 nap alatt elvégezzük a napelemes rendszer telepítését. Hőszivattyús rendszerek általában 2-5 napot igényelnek.</p>
+      </div>
+      <div style="background:white;border-radius:var(--r-lg);padding:28px;border:1px solid var(--gray-200);">
+        <h4 style="color:var(--navy);margin-bottom:10px;">Milyen garanciát kapok?</h4>
+        <p style="font-size:14px;color:var(--gray-400);">Munkánkra garanciát vállalunk. A napelemek gyártói garanciája általában 10-25 év, a kivitelezésre 2 év garanciát biztosítunk.</p>
+      </div>
+      <div style="background:white;border-radius:var(--r-lg);padding:28px;border:1px solid var(--gray-200);">
+        <h4 style="color:var(--navy);margin-bottom:10px;">Segítenek a pályázatban is?</h4>
+        <p style="font-size:14px;color:var(--gray-400);">Igen! Teljeskörű pályázat menedzsmentet kínálunk — a pályázat megírásától a kivitelezésen át az elszámolásig.</p>
+      </div>
+      <div style="background:white;border-radius:var(--r-lg);padding:28px;border:1px solid var(--gray-200);">
+        <h4 style="color:var(--navy);margin-bottom:10px;">Mikor kapom meg az árajánlatot?</h4>
+        <p style="font-size:14px;color:var(--gray-400);">Az űrlap beküldése után 24 órán belül felvesszük a kapcsolatot, és egyeztetünk egy helyszíni felmérési időpontot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand"><img src="assets/images/logo.png" alt="Knauz Energie Kft"><p>Megújuló energiaszolgáltatások.</p></div>
+    <div class="footer-col"><h4>Oldalak</h4><a href="index.html">Főoldal</a><a href="szolgaltatasok.html">Szolgáltatások</a><a href="programok.html">Programok</a><a href="referencia.html">Referenciák</a><a href="rolunk.html">Rólunk</a><a href="arajanlatot-kerek.html">Árajánlat</a></div>
+    <div class="footer-col"><h4>Szolgáltatások</h4><a href="szolgaltatasok.html#napelem">Napelemes rendszerek</a><a href="szolgaltatasok.html#hoszivattyu">Hőszivattyús rendszerek</a><a href="szolgaltatasok.html#klima">Klíma rendszerek</a><a href="szolgaltatasok.html#villany">Villanyszerelés</a></div>
+    <div class="footer-col"><h4>Elérhetőség</h4><a href="mailto:info@knauz-energie.hu">info@knauz-energie.eu</a><a href="tel:+36307223991">+36 30 722 3991</a><a href="tel:+36204771144">+36 20 477 1144</a><a href="tel:+36204043023">+36 20 404 3023</a></div>
+  </div>
+  <div class="footer-bottom"><p>© 2024 Knauz Energie Kft.</p><a href="https://www.knauz-energie.hu/adatkezelesi-tajekoztato/">Adatkezelési tájékoztató</a></div>
+</div></footer>
+<script src="assets/js/main.js"></script>
+</body></html>
